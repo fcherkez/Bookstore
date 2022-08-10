@@ -1,0 +1,15 @@
+﻿@model Bookstore.Catalog.Api.Dto.Books.BookResponse
+
+<h1>@Model.Title</h1>
+
+<p>ISBN:  @Model.ISBN</p>
+<p> @Model.Year</p>
+<p> @Model.Price</p>
+<p>Number of pages: @ViewBag.OpenLibraryBook.NumberOfPages</p>
+<img src="@ViewBag.OpenLibraryBook.Cover.Medium.ToString()" alt="" />
+
+<form method="post" asp-action="BookPurchase">
+    <input type="hidden" name="id" value="@Model.BookID"/>
+    <button type="submit" class="btn btn-primary">Purchase</button>
+</form>
+

@@ -1,0 +1,9 @@
+﻿@model List<Bookstore.Catalog.Api.Dto.Books.AuthorResponse>
+
+<ul>
+    @foreach (var author in Model)
+    {
+        <li><a asp-action="Author" asp-route-id="@author.AuthorID">
+            @author.FirstName @author.LastName </a> </li>
+    }
+</ul>

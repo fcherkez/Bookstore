@@ -1,0 +1,17 @@
+﻿@model Bookstore.Catalog.Api.Dto.Books.AuthorResponse
+
+<h1>@Model.FirstName @Model.LastName</h1>
+<p>@Model.About</p>
+<p>Birth Year: @Model.BirthYear</p>
+<p>Nationality: @Model.Nationalty</p>
+
+<ul>
+    @foreach (var book in Model.Books)
+    {
+        <li>
+            <a asp-action="Book" asp-route-id="@book.BookID">
+                @book.Title
+            </a>
+        </li>
+    }
+</ul>

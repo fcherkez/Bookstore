@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bookstore.Catalog.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Bookstore.Catalog.Api.Controllers.BooksController.Get">
+             <summary>
+            Returns all books 
+             </summary>
+             <returns>all books</returns>
+        </member>
+        <member name="M:Bookstore.Catalog.Api.Controllers.BooksController.Get(System.Int32)">
+            <summary>
+            Returns a single book by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
